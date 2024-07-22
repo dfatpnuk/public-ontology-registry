@@ -3,8 +3,8 @@
 # ----------------------------------------------------------------
 install:
 	@echo Installing
-	poetry check
 	poetry lock --no-update
+	poetry check
 	poetry update
 	poetry install --no-cache 
 	
@@ -28,3 +28,6 @@ all:
 jupyter:
 	poetry run python -m ipykernel install --name ontology-registry
 	poetry run jupyter lab
+
+clear_cache:
+	poetry cache clear --all bast-ai 
