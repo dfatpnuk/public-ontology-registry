@@ -1,6 +1,20 @@
 # ----------------------------------------------------------------
 # public-ontology-registry
 # ----------------------------------------------------------------
+
+ifeq ($(OS),Windows_NT)
+    os_shell := powershell
+	remove_lib := resources/scripts/poetry_remove_lib.ps1
+	download_en_core_web_sm := .\resources\scripts\download-en_core_web_sm.ps1
+else
+    os_shell := $(SHELL)
+	remove_lib := resources/scripts/poetry_remove_lib.sh
+	download_en_core_web_sm := ./resources/scripts/download-en_core_web_sm.sh
+endif
+
+models:
+	$(os_shell) $(download_en_core_web_sm)
+
 install:
 	@echo Installing
 	poetry lock --no-update

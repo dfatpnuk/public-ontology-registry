@@ -40,12 +40,21 @@ priority = "primary"
 python = "^3.10"
 
 ## BAST AI
-bast-ai-base = "0.5.0"
+bast-ai-base = "0.5.2"
+bast-ai-config = "0.5.2"
 bast-ai-dvc = "0.5.0"
+bast-initialize-pipeline = "0.1.0"
+bast-openai-pipeline = "0.1.0"
+bast-milvus-pipeline = "0.1.0"
 bast-ai-build-owl = "0.1.1"
+bast-ai-parse-owl = "0.1.1"
+bast-ai-segmenter = "0.1.0"
+bast-ai-spacy-token-parser = "0.1.1"
+bast-ai-tokenizer = "0.1.1"
 
 ## Open sources
 dvc-s3 = "3.2.0"
+en-core-web-sm = {path="resources/lib/en_core_web_sm-3.7.0.tar.gz"}
 
 ## Jupyter
 ipykernel = "^6.21.2"
