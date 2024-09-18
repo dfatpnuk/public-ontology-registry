@@ -1,20 +1,10 @@
 # -*- coding: utf-8 -*-
 """Notebook config"""
-from bast_ai.utils import FileIO,TextUtils
-
-from bast_ai_config import get_bast_config
-from bast_ai_openai import getOpenAIAgent
-from bast_ai_milvus import getVectorDBClient
-# from functools import partial
-# from copy import deepcopy
 from bast_ai_segmenter import segment_text
 from bast_ai_parseowl import MutatoAPI,FindOntologyData
 import logging
 
-bast_config = get_bast_config()
-crypto = bast_config.get_crypto()
-openai_agent = getOpenAIAgent(bast_config.get_openai())
-vectordb = getVectorDBClient(bast_config.get_milvus())
+parsers = dict()
 
 def getParser(
     ontology : str,
