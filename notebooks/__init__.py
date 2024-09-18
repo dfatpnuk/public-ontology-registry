@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Notebook config"""
+from bast_ai.utils import FileIO, TextUtils
 from bast_ai_segmenter import segment_text
 from bast_ai_parseowl import MutatoAPI,FindOntologyData
 import logging
