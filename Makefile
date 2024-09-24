@@ -17,6 +17,7 @@ models:
 
 install:
 	@echo Installing
+	make models
 	poetry lock --no-update
 	poetry check
 	poetry update
