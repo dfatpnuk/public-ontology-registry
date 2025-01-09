@@ -41,7 +41,7 @@ python = "^3.10"
 
 ## BAST AI
 bast-ai-base = "0.5.2"
-bast-ai-config = "0.5.2"
+# bast-ai-config = "0.5.2"
 bast-ai-dvc = "0.5.0"
 bast-initialize-pipeline = "0.1.0"
 bast-openai-pipeline = "0.1.0"
